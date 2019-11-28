@@ -1,0 +1,28 @@
+﻿{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Xin chào","Chào shop","Chào bạn","Chào ad","Mình muốn được tư vấn","Cần tư vấn", "Hello"],
+         "responses": ["Xin chào, mình có thế giúp gì cho bạn ?","Xin chào, bạn cần hỗ trợ gì ạ?"],
+         "context_set": ""
+        },
+        {"tag": "hours",
+         "patterns": ["Bên bạn còn mở cửa không", "Khi nào shop mở cửa", "Shop mở cửa lúc mấy giờ" ],
+          "responses": [ "Dạ bên mình mở cửa từ 8h sáng đến 8h tối ạ " ]
+        },
+        {"tag": "menu",
+         "patterns": ["Bên mình có kinh doanh sản phẩm nào nhỉ", "Shop có sản phẩm nào"],
+         "responses": ["Dạ bên mình có các dòng sản phẩm : Iphone, Samsung,Oppo, Xiaomi, Huawei. Bạn cần tư vấn dòng sản phẩm nào ạ]
+        },
+        {"tag": "payments",
+         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+        },
+      {"tag": "goodbye",
+       "patterns": ["Bye", "See you later", "Goodbye"],
+       "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+      },
+      {"tag": "thanks",
+       "patterns": ["Thanks", "Thank you", "That's helpful"],
+       "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      }
+   ]
+}

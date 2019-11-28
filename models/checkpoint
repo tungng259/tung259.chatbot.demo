@@ -1,0 +1,2 @@
+model_checkpoint_path: "E:\\machine learning\\Chatbot-Demo\\models\\my_model"
+all_model_checkpoint_paths: "E:\\machine learning\\Chatbot-Demo\\models\\my_model"

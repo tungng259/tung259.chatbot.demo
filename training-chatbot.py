@@ -11,7 +11,7 @@ import tensorflow as tf
 import random
 
 import json
-with open('data/dataset.json') as json_data:
+with open('data/dataset-copy.json') as json_data:
     intents = json.load(json_data)
     
 def ngrams(str, n):
@@ -43,7 +43,7 @@ def ngrams(str, n):
 words = []
 classes = []
 documents = []
-ignore_words = ['?', 'a ', 'an ', 'the ']
+ignore_words = ['?', 'à', 'ừ ', 'ờ', 'và', 'thì', 'là', 'mà']
 
 for intent in intents['intents']:
     for pattern in intent['patterns']:

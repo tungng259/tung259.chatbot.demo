@@ -15,12 +15,9 @@ train_y = data['train_y']
 
 # import intents file
 import json
-with open('data/dataset.json') as json_data:
+with open('data/dataset-copy.json') as json_data:
     intents = json.load(json_data)
     
-
-
-
 net = tflearn.input_data(shape=[None, len(train_x[0])])
 net = tflearn.fully_connected(net, 8)
 net = tflearn.fully_connected(net, 8)
