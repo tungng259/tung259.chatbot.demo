@@ -4,7 +4,6 @@ from predict import classify
 req =""
 req = input()
 
-while(classify(req) != classify("goodbye")):
+while(1==1):
     response(req)
     req=input()
-response("Goodbye")

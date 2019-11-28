@@ -15,12 +15,13 @@ train_y = data['train_y']
 
 # import intents file
 import json
-with open('data/dataset-copy.json') as json_data:
+import codecs
+with codecs.open('data/dataset.json', 'r', 'utf-8-sig')as json_data:
     intents = json.load(json_data)
     
 net = tflearn.input_data(shape=[None, len(train_x[0])])
-net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, 8)
+net = tflearn.fully_connected(net, 14)
+net = tflearn.fully_connected(net, 7)
 net = tflearn.fully_connected(net, len(train_y[0]), activation='softmax')
 net = tflearn.regression(net, optimizer='adam', loss='categorical_crossentropy')
 

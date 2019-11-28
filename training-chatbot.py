@@ -11,7 +11,9 @@ import tensorflow as tf
 import random
 
 import json
-with open('data/dataset-copy.json') as json_data:
+import codecs
+data = codecs.open('data/dataset.json', 'r', 'utf-8-sig')
+with data as json_data:
     intents = json.load(json_data)
     
 def ngrams(str, n):
@@ -91,14 +93,14 @@ train_y = list(training[:,1])
 tf.reset_default_graph()
 
 net = tflearn.input_data(shape=[None, len(train_x[0])])
-net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, 8)
+net = tflearn.fully_connected(net, 14)
+net = tflearn.fully_connected(net, 7)
 net = tflearn.fully_connected(net, len(train_y[0]), activation='softmax')
 net = tflearn.regression(net, optimizer='adam', loss='categorical_crossentropy')
 
 model = tflearn.DNN(net, tensorboard_dir='tflearn_logs')
 
-model.fit(train_x, train_y, n_epoch=200, batch_size=8, show_metric=True)
+model.fit(train_x, train_y, n_epoch=500, batch_size=8, show_metric=True)
  
 
 import pickle
