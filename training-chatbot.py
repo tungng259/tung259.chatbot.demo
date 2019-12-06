@@ -45,7 +45,7 @@ def ngrams(str, n):
 words = []
 classes = []
 documents = []
-ignore_words = ['?', 'à', 'ừ ', 'ờ', 'và', 'thì', 'là', 'mà']
+ignore_words = ['?', 'à', 'ừ ', 'ờ', 'và', 'thì', 'là', 'mà','cần','còn','về',',']
 
 for intent in intents['intents']:
     for pattern in intent['patterns']:

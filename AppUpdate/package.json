@@ -1,0 +1,28 @@
+{
+  "name": "webcam-base64-streaming",
+  "version": "1.0.0",
+  "description": "Webcam live streaming with WebSockets and Base64",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcambose/webcam-base64-streaming.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexcambose/webcam-base64-streaming/issues"
+  },
+  "homepage": "https://github.com/alexcambose/webcam-base64-streaming#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "glob": "^7.1.5",
+    "mkdirp": "^0.5.1",
+    "nodemon": "^1.19.4",
+    "ws": "^6.2.1"
+  }
+}

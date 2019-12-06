@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <div class="container c_b">
+        <div class="row pt-3">
+            <div class="chat-main">
+                <div class="col-md-12 chat-header rounded-top bg-primary text-white">
+                    <div class="row">
+                        <div class="col-md-6 username pl-2">
+                            <i class="fa fa-circle text-success" aria-hidden="true"></i>
+                            <h6 class="m-0">Tư vấn khách hàng</h6>
+                        </div>
+                        <div class="col-md-6 options text-right pr-2">
+                            <i class="fa fa-times hide-chat-box" aria-hidden="true"></i>
+                          </div>
+                    </div>
+                </div>
+                <div class="chat-content">
+                    <div id="scroll" class="col-md-12 chats border">
+                        <ul id="rootMessage" class="p-0 pt-1">
+                            <!-- <li class="pl-2 pr-2 bg-primary rounded text-white text-center send-msg mb-1">
+                                hi
+                            </li>
+                            <li class="p-1 rounded mb-1">
+                                <div class="receive-msg">
+                                    <img src="http://nicesnippets.com/demo/image1.jpg">
+                                    <div class="receive-msg-desc  text-center mt-1 ml-1 pl-2 pr-2">
+                                        <p class="pl-2 pr-2 rounded">hello</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="pl-2 pr-2 bg-primary rounded text-white text-center send-msg mb-1">
+                                how are you ???
+                            </li>
+                            <li class="p-1 rounded mb-1">
+                                <div class="receive-msg">
+                                    <div class="receive-msg-img">
+                                        <img src="http://nicesnippets.com/demo/image1.jpg">
+                                    </div>
+                                    <div class="receive-msg-desc rounded text-center mt-1 ml-1 pl-2 pr-2">
+                                        <p class="mb-0 mt-1 pl-2 pr-2 rounded-top rounded-right">I'm fine !!!</p>
+                                        <p class="mb-0 mt-1 pl-2 pr-2 rounded-bottom rounded-right">Where are you ?</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="pl-2 pr-2 bg-primary text-white text-center send-msg mb-1 rounded-top rounded-left">
+                                at california
+                            </li>
+                            <li class="pl-2 pr-2 bg-primary text-white text-center send-msg mb-1 rounded-bottom rounded-left">
+                                and where are you ?
+                            </li>
+                            <li class="p-1 rounded  mb-1">
+                                <div class="receive-msg">
+                                    <img src="http://nicesnippets.com/demo/image1.jpg">
+                                    <div class="receive-msg-desc rounded text-center mt-1 ml-1 pl-2 pr-2">
+                                        <p class="pl-2 pr-2 rounded">now i'm at new york city</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="pl-2 pr-2 bg-primary rounded text-white text-center send-msg mb-1">
+                                Ok
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="col-md-12 message-box border pl-2 pr-2 border-top-0">
+                        <input id="inputMessage" onkeypress="return onSubmit(event)" type="text" class="pl-0 pr-0 pb-2 w-100" placeholder="Type a message..." />
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/chatbot.js"></script>
+  </body>
+</html>

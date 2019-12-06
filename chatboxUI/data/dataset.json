@@ -1,0 +1,75 @@
+﻿{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [ "Hi", "Xin chào", "Chào shop", "Chào bạn", "Chào ad", "Mình muốn được tư vấn", "Cần tư vấn", "Hello" ],
+      "responses": [ "Xin chào, mình có thế giúp gì cho bạn ?", "Xin chào, bạn cần hỗ trợ gì ạ?" ],
+      "context_set": ""
+    },
+    {
+      "tag": "hours",
+      "patterns": [ "Bên bạn còn mở cửa không", "Khi nào shop mở cửa", "Shop mở cửa lúc mấy giờ" ],
+      "responses": [ "Dạ bên mình mở cửa từ 8h sáng đến 10h tối mỗi ngày ạ" ]
+    },
+    {
+      "tag": "menu",
+      "patterns": [ "Bên mình có kinh doanh các dòng sản phẩm nào nhỉ?", "Shop có các loại sản phẩm nào?","Shop có các dòng điện thoại nào","Bạn có bán điện thoại nào" ],
+      "responses": [ "Dạ bên mình có các dòng sản phẩm : Iphone, Samsung, Oppo, Xiaomi, Huawei . Bạn cần tư vấn dòng sản phẩm nào ạ" ]
+    },
+    {
+      "tag": "price-low",
+      "patterns": [ "Bạn có thể gợi ý cho mình điện thoại nào giá dưới 5tr không?", "5tr-10tr", "Mình Chỉ có 3tr", "2tr5","Mình muốn tư vấn điện thoại giá dưới 5tr" ],
+      "responses": [ "Dạ với mức giá như vậy, mình xin gợi ý bạn các dòng như sau: Các dòng Huawei, Xiaomi. Samsung thì có A20-10, S7/S7 Edge ạ. " ]
+    },
+    {
+      "tag": "price-med",
+      "patterns": [ "Bạn có thể gợi ý cho mình điện thoại nào giá tầm 5tr đến 10tr không?", "5tr-10tr", "Mình hiện tại có 6tr", "7tr" ],
+      "responses": [ "Dạ với mức giá như vậy, mình xin gợi ý bạn các dòng như sau: Samsung A30-50-70, Note 8, S8, Oppo " ]
+    },
+    {
+      "tag": "price-high",
+      "patterns": [ "Bạn có thể gợi ý cho mình điện thoại nào giá tầm trên 10tr không?", "5tr-10tr", "Mình hiện tại có 11tr", "15tr" ],
+      "responses": [ "Dạ mình xin giới thiệu với bạn các dòng cao cấp như : Samsung galaxy S9, Iphone X ạ  " ]
+    },
+    {
+      "tag": "detail-camera",
+      "patterns": [ "Bạn có thể gợi ý cho mình điện thoại chụp hình đẹp không?", "Camera tốt", "Chụp hình đẹp" ],
+      "responses": [ "Dạ nếu bạn có như cầu về tính năng chụp hình đẹp thì mình xin giới thiệu với bạn các dòng : Oppo, Iphone ạ  " ]
+    },
+    {
+      "tag": "detail-gaming",
+      "patterns": [ "Mình muốn điện thoại dùng để chơi game", "Điện thoại chơi game", "Điện thoại chơi được Pubg" ],
+      "responses": [ "Dạ mình xin tư vấn top các điện thoại để chơi agme :Xiaomi Black Shark, Xiaomi Mi Max, Huawei Y9, Sony Xperia " ]
+    },
+    {
+      "tag": "iphone",
+      "patterns": [ "Cần tư vấn về iphone", "Muốn tìm hiểu về iphone", "iphone có gì tốt", "Nói mình nghe chi tiết về iphone","Vì sao nên dùng iphone","Iphone","Dòng iphone như thế nào" ],
+      "responses": [ "Dạ dòng Iphone được thiết kế sang trọng Từ cấu trúc hình chữ nhật, màn hình cảm ứng, nút nguồn, màu sắc… mọi thứ đều cuốn hút. Chưa kể đến cấu hình bên trong như hệ điều hành iOS riêng biệt, màu sắc hiển thị sống động, mượt mà. Ngoài ra được thiết kế camera chuyên nghiệp." ]
+    },
+    {
+      "tag": "samsung",
+      "patterns": [ "Cần tư vấn về samsung", "Muốn tìm hiểu về samsung", "Chi tiết về Samsung","Vì sao nên dùng samsung","Samsung", "Dòng samsung như thế nào" ],
+      "responses": [ "Dạ dòng Samsung có màn hình hiển thị không giới hạn, hình ảnh trung thực, sắc nét. Cấu hình phần cứng hấp dẫn : chiếc Samsung sẽ luôn vận hành trơn tru và ổn định, sẽ không có hiện tượng tràn RAM hay “văng” ứng dụng như trên các thiết bị có dung lượng RAM nhỏ. Bộ nhớ trong là điều mà người dùng sẽ không cần phải lo lắng, với dung lượng ROM 128GB con số đủ lớn để bạn quên đi về vấn đề đầy bộ nhớ sau 1 khoảng thời gian dài sử dụng, thoải mái lưu trữ hình ảnh, tài liệu cá nhân. "]
+    },
+    {
+      "tag": "oppo",
+      "patterns": [ "Cần tư vấn về Oppo", "Muốn tìm hiểu thêm thông tin về Oppo", "Chi tiết về Oppo","Dòng Oppo như thế nào", "Oppo"],
+      "responses": [ "Dạ Thương hiệu công nghệ nổi tiếng Oppo có nguồn gốc xuất xứ từ Trung Quốc. Đây là thương hiệu đã đăng ký trên toàn cầu. Oppo không chỉ có tại thị trường Việt Nam, châu Á mà đã có mặt tại các thị trường châu Âu và Bắc Mỹ. Sản phẩm của Oppo được đánh giá cao vì được trang bị những linh kiện điện tử chất lượng ngang hàng các tên tuổi nổi tiếng trong ngành. Điều này giúp cho sản phẩm của Oppo có khả năng xử nhanh các tác vụ và tối ưu hiệu năng sử dụng cao hơn. Đối tượng khách hàng mà Oppo hướng đến nằm ở tầm trung và thấp nên giá thành sản phẩm khá rẻ so với tính năng thật của sản phẩm." ]
+    },
+    {
+      "tag": "COD",
+      "patterns": [ "Shop có nhận ship COD không", "Có COD không ?","Mình không có tài khoản ngân hàng phải làm sao","Trả tiền mặt được không" ],
+      "responses": [ "Dạ bên mình có áp dụng COD ạ" ]
+    },
+    {
+      "tag": "maintenance",
+      "patterns": [ "Thời hạn bảo hành sản phẩm là bao lâu", "Bên shop mình bảo hành sản phẩm bao lâu vậy" ],
+      "responses": [ "Dạ thời hạn bảo hành sản phẩm bên mình là 1 năm ạ. Trong thời hạn 1 năm đó nếu sản phẩm có vấn đề sẽ được sửa chữa miễn phí ạ" ]
+    },
+    {
+      "tag": "thank",
+      "patterns": [ "cảm ơn shop", "tks shop", "cảm ơn", "cảm ơn nha", "tks", "tks nhiều" ],
+      "responses": [ "Rất vui lòng được hỗ trợ ạ. Nếu bạn có nhu cầu cần hỗ trợ chi tiết thêm thì bạn có thể đến tận nơi kiểm tra sản phẩm nhé !" ]
+    }
+  ]
+}
