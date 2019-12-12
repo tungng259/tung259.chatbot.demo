@@ -18,6 +18,7 @@
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -26,6 +27,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/chat.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,18 +56,10 @@
         </div>
     </div> <!-- End site branding area -->
     
-    <div class="mainmenu-area">
+     <div class="mainmenu-area">
         <div class="container">
             <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div> 
-                <div class="navbar-collapse collapse">
+                <div class="navbar navbar-expand-lg navbar-light bg-light">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Trang Chủ</a></li>
                         <li><a href="shop.html">Danh mục sản phẩm</a></li>
@@ -89,8 +83,7 @@
             </div>
         </div>
     </div>
-    
-    
+        
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
@@ -277,7 +270,7 @@
                 </div>
             
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" >
                     <div class="product-pagination text-center">
                         <nav>
                           <ul class="pagination">
@@ -340,6 +333,38 @@
             </div>
         </div>
     </div> <!-- End footer bottom area -->
+
+         <div class="container c_b "  style="position: relative; z-index: 1">
+        <div class="row pt-3">
+            <div class="chat-main">
+                <div class="col-md-12 chat-header rounded-top bg-primary text-white">
+                    <div class="row">
+                        <div class="col-md-6 username pl-2">
+                            <i class="fa fa-circle text-success" aria-hidden="true"></i>
+                            <h6 class="m-0">Tư vấn khách hàng</h6>
+                        </div>
+                        <div class="col-md-6 options text-right pr-2">
+                            <i class="fa fa-times hide-chat-box" aria-hidden="true"></i>
+                          </div>
+                    </div>
+                </div>
+                <div class="chat-content">
+                    <div id="scroll" class="col-md-12 chats border" style="background: white">
+                        <ul id="rootMessage" class="p-0 pt-1">
+                        </ul>
+                    </div>
+                    <div class="col-md-12 message-box border pl-2 pr-2 border-top-0" style="background: white">
+                        <input id="inputMessage" onkeypress="return onSubmit(event)" type="text" class="pl-0 pr-0 pb-2 w-100" placeholder="Type a message..." />
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--End chatbot area-->
+    
+    <!--Chatbot js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/chatbot.js"></script>
    
     <!-- Latest jQuery form server -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
